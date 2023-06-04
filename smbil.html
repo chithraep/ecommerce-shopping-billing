@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        /* CSS styles for the form */
+        /* Add your custom styles here */
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@800&display=swap');
+
+        .form-container-left {
+            float: left;
+            width: 50%;
+            margin: 0 auto;
+            padding: 8px;
+            border: none;
+
+        }
+
+        h3,
+        h5 {
+            font-family: 'poppins', sans-serif;
+            border-bottom-style: solid;
+            border-bottom-width: 40%;
+        }
+
+        .form-label1 {
+            border-bottom: solid #333 40%;
+        }
+
+        .form-container-right {
+            float: right;
+            width: 43%;
+            margin: 0 10px;
+            margin-bottom: 5px;
+            padding: 1%;
+
+            border: none;
+            background-color: #E7E9EB;
+            ;
+
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-input {
+            width: 95%;
+            padding: 5px;
+            color: #f2f2f2;
+            border: 1px solid #ccc;
+
+        }
+
+        .form-input1 {
+            width: 350px;
+            padding: 3px;
+            color: #f2f2f2;
+            border: 1px solid #ccc;
+
+
+
+        }
+
+        .name-section {
+            display: flex;
+            flex-direction: row;
+            column-gap: 15px;
+
+        }
+
+        .form-select {
+            width: 96%;
+            padding: 5px;
+            border: 1px solid #ccc;
+
+        }
+
+
+
+        .form-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-textarea {
+            width: 95%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+
+
+
+        .text-muted {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        .textmuted {
+            color: #6c757d;
+            font-size: 15px;
+        }
+
+        .name-section1 {
+            display: flex;
+            flex-direction: row;
+            word-spacing: 180px;
+            height: 24px;
+        }
+
+        .name-section2 {
+            display: flex;
+            flex-direction: row;
+            word-spacing: 2px;
+            height: 24px;
+
+
+
+        }
+
+        #left {
+            text-align: left;
+        }
+
+        #right {
+            text-align: right;
+        }
+
+        .btn.btn-primary {
+            width: 100%;
+            height: 20px;
+            border-radius: 0;
+            padding: 13px 0;
+            background-color: rgb(122, 3, 3);
+            border: none;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .btn {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container-left">
+        <form>
+            <h3>BILLING DETAILS</h3>
+            <div class="name-section">
+                <div class="form-group">
+                    <label for="first-name" class="form-label">First name *</label>
+                    <input type="text" id="first-name" class="form-input1" value="#f2f2f2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name" class="form-label">Last name *</label>
+                    <input type="text" id="last-name" class="form-input1" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="company-name" class="form-label">Company Name</label>
+                <input type="text" id="company-name" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="country" class="form-label">Country*</label>
+                <select id="country" class="form-select" required>
+                    <option value="">india</option>
+                    <option value="USA">india</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="street-address-1" class="form-label">Street Address*</label>
+                <input type="text" id="street-address-1" class="form-input" placeholder="House number and street name"
+                    required>
+
+                <input type="text" id="street-address-2" class="form-input"
+                    placeholder="Appartment,suite,unit etc(optional)">
+            </div>
+
+            <div class="form-group">
+                <label for="town" class="form-label">Town/city* </label>
+                <input type="text" id="town" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="state" class="form-label">State/Country*</label>
+                <select id="state" class="form-select" required>
+                    <option value=""> </option>
+                    <option value="CA">California</option>
+                    <option value="NY">New York</option>
+                    <option value="TX">Texas</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="postcode" class="form-label">Postcode/Zip*</label>
+                <input type="text" id="postcode" class="form-input" required>
+            </div>
+            <div class="name-section">
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number*</label>
+                    <input type="tel" id="phone" class="form-input1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address*</label>
+                    <input type="email" id="email" class="form-input1" required>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <input type="checkbox" id="create-account"><br>
+                <label for="create-account" class="form-label1">Create an Account:</label>
+                <hr>
+            </div>
+
+            <div class="form-group">
+                <h5> ADDITIONAL INFORMATION</h5>
+            </div>
+            <div class="form-group">
+                <label for="additional-info" class="form-label">Order notes</label><br>
+                <textarea id="additional-info" class="form-textarea"
+                    placeholder="Notes about your order,e.g.special notes for delivery"></textarea>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="form-container-right">
+        <form>
+            <h3>YOUR ORDER </h3>
+            <div class="name-section1">
+                <div class="form-group">
+                    <P class="ps-3 textmuted">product</P>
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <P class="ps-3 textmuted">Total</P>
+                </div>
+            </div>
+            <hr>
+            <div class="name-section2">
+                <div class="form-group" id="left">
+                    <P class="ps-3 textmuted">Affifa Brown Sofa-1 seater sofa
+                        *1</P>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group" id="right">
+                    <P class="ps-3 textmuted">5,555.00</P>
+                </div>
+            </div>
+            <hr>
+            <div class="name-section1">
+                <div class="form-group">
+                    <P class="ps-3 textmuted">Subtotal</P>
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <P class="ps-3 textmuted">5,555.00</P>
+                </div>
+            </div>
+            <hr>
+            <div class="name-section1">
+                <div class="form-group">
+                    <P class="ps-3 textmuted">TOTAL</P>
+                </div>&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <P class="ps-3 textmuted">5,555.00</P>
+                </div>
+            </div>
+            <hr>
+            <div class="name-section">
+                <div class="form-group">
+                    <P class="ps-3 textmuted">Credit Card/Debit Card/NetBanking</P>
+                </div>
+            </div>
+            <div class="name-section">
+                <div class="form-group">
+                    <img src="logo.png">
+                </div>
+            </div>
+            <div class="name-section">
+                <div class="form-group">
+                    <P class="ps-3 textmuted">Pay securely by Credit or Debit card or internet banking through</P>
+                    <p class="ps-3 textmuted">Razorpay</p>
+                </div>
+            </div>
+            <div class="btn btn-primary">PLACE ORDER
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        function validateForm() {
+            var postcodeInput = document.getElementById("postcode");
+            var postcodeError = document.getElementById("postcode-error");
+
+
+            var validZipCodes = ["12345", "67890", "54321"];
+
+            if (!validZipCodes.includes(postcodeInput.value)) {
+                postcodeError.innerText = "Invalid postcode/zip code.";
+                return false;
+            }
+
+            // Reset error message
+            postcodeError.innerText = "";
+
+            // Proceed with form submission
+            return true;
+        }
+    </script>
+</body>
+
+</html>
